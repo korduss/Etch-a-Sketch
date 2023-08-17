@@ -4,18 +4,23 @@ body{
     align-items: center;
     
 }
-#container{
+#mainContainer{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     height: 640px;
     width: 640px;
     margin-top: 150px;
     border: 2px solid black;
 }
 .square{
-    width: 40px;
     background-color: lightgrey;
+    flex-grow: 1;
+    height: auto;
 }
 .blackSquare{
     background-color: black;
+}
+.container{
+    flex-grow: 1;
+    display: flex;
 }
